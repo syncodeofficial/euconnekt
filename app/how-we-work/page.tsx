@@ -43,7 +43,7 @@ export default function HowWeWorkPage() {
               },
             ].map((item) => (
               <div key={item.step}>
-                <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-accent text-white font-bold">
+                <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-brand text-white font-bold">
                   {item.step}
                 </div>
                 <h3 className="font-semibold text-primary">{item.title}</h3>

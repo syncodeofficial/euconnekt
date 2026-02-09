@@ -123,7 +123,7 @@ export default function Header() {
 
             <Link
               href="/contact"
-              className="ml-3 rounded-md bg-accent px-4 py-2 text-sm font-semibold text-white hover:bg-blue-700"
+              className="ml-3 rounded-md bg-brand px-4 py-2 text-sm font-semibold text-white hover:bg-blue-900"
             >
               Contact Us
             </Link>

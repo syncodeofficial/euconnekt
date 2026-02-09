@@ -19,7 +19,7 @@ export default function FreeAssessmentPage() {
 
           <div className="grid gap-8 md:grid-cols-3">
             <div className="rounded-xl bg-white p-6 shadow-sm">
-              <div className="mx-auto mb-4 flex h-10 w-10 items-center justify-center rounded-full bg-blue-600 font-bold text-white">
+              <div className="mx-auto mb-4 flex h-10 w-10 items-center justify-center rounded-full bg-brand font-bold text-white">
                 1
               </div>
               <h3 className="mb-2 font-semibold">Submit Your Details</h3>
@@ -29,7 +29,7 @@ export default function FreeAssessmentPage() {
             </div>
 
             <div className="rounded-xl bg-white p-6 shadow-sm">
-              <div className="mx-auto mb-4 flex h-10 w-10 items-center justify-center rounded-full bg-blue-600 font-bold text-white">
+              <div className="mx-auto mb-4 flex h-10 w-10 items-center justify-center rounded-full bg-brand font-bold text-white">
                 2
               </div>
               <h3 className="mb-2 font-semibold">Expert Review</h3>
@@ -39,7 +39,7 @@ export default function FreeAssessmentPage() {
             </div>
 
             <div className="rounded-xl bg-white p-6 shadow-sm">
-              <div className="mx-auto mb-4 flex h-10 w-10 items-center justify-center rounded-full bg-blue-600 font-bold text-white">
+              <div className="mx-auto mb-4 flex h-10 w-10 items-center justify-center rounded-full bg-brand font-bold text-white">
                 3
               </div>
               <h3 className="mb-2 font-semibold">Personalised Guidance</h3>
@@ -131,7 +131,7 @@ export default function FreeAssessmentPage() {
             {/* SUBMIT */}
             <button
               type="submit"
-              className="w-full rounded-md bg-blue-600 py-3 font-semibold text-white hover:bg-blue-700"
+              className="w-full rounded-md bg-brand py-3 font-semibold text-white hover:bg-blue-900"
             >
               Submit Assessment
             </button>

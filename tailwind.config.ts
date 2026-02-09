@@ -10,6 +10,8 @@ const config: Config = {
       colors: {
         primary: "#101828",
         accent: "#2563eb",
+        brand: "#032b5d",
+        brandSoft: "#1F2A44",
       },
     },
   },
