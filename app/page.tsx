@@ -1,65 +1,126 @@
-import Image from "next/image";
+import Hero from "@/components/Hero";
+import Link from "next/link";
 
-export default function Home() {
+export default function HomePage() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+    <>
+      <Hero
+        title="Your Path to Euconnekt"
+        subtitle="Expert guidance for employment permits in Ireland. We help employers and individuals navigate the EuConnekt process with confidence."
+        variant="video"
+        video="/videos/hero.webm"
+        overlay
+      />
+
+
+      {/* Services */}
+      <section className="bg-gray-50 py-20">
+        <div className="mx-auto max-w-7xl px-6">
+          <h2 className="mb-12 text-center text-3xl font-bold text-primary">
+            Our Services
+          </h2>
+
+          <div className="grid gap-8 md:grid-cols-3">
+            {[
+              {
+                title: "For Employers",
+                text: "Streamline your recruitment process with our comprehensive employer services.",
+                link: "/services/employers",
+              },
+              {
+                title: "For Individuals",
+                text: "Get expert guidance for your EuConnekt application journey.",
+                link: "/services/individuals",
+              },
+              {
+                title: "Free Assessment",
+                text: "Find out your eligibility for EuConnekt with our free assessment tool.",
+                link: "/free-assessment",
+              },
+            ].map((item) => (
+              <div
+                key={item.title}
+                className="rounded-xl bg-white p-8 shadow-sm"
+              >
+                <h3 className="text-lg font-semibold text-primary">
+                  {item.title}
+                </h3>
+                <p className="mt-3 text-sm text-gray-600">{item.text}</p>
+                <Link
+                  href={item.link}
+                  className="mt-4 inline-block text-sm font-medium text-accent"
+                >
+                  Learn More →
+                </Link>
+              </div>
+            ))}
+          </div>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+      </section>
+
+      {/* Permit Types */}
+      <section className="py-20">
+        <div className="mx-auto max-w-7xl px-6">
+          <h2 className="mb-12 text-center text-3xl font-bold text-primary">
+            Work Permit Types
+          </h2>
+
+          <div className="grid gap-8 md:grid-cols-2">
+            {[
+              {
+                title: "Critical Skills Employment Permit",
+                text: "For highly skilled workers in areas where there is a shortage of Irish workers.",
+                link: "/work-permit-types/critical-skills",
+              },
+              {
+                title: "General Employment Permit",
+                text: "For non-EU workers seeking employment in Ireland with employer sponsorship.",
+                link: "/work-permit-types/general-employment",
+              },
+            ].map((item) => (
+              <div
+                key={item.title}
+                className="border-l-4 border-accent bg-white p-8"
+              >
+                <h3 className="text-lg font-semibold text-primary">
+                  {item.title}
+                </h3>
+                <p className="mt-2 text-sm text-gray-600">{item.text}</p>
+                <Link
+                  href={item.link}
+                  className="mt-3 inline-block text-sm font-medium text-accent"
+                >
+                  View Details →
+                </Link>
+              </div>
+            ))}
+          </div>
+
+          <div className="mt-10 text-center">
+            <Link
+              href="/work-permit-types"
+              className="rounded-md bg-accent px-6 py-3 text-sm font-semibold text-white hover:bg-blue-700"
+            >
+              View All Permit Types
+            </Link>
+          </div>
         </div>
-      </main>
-    </div>
+      </section>
+
+      {/* CTA */}
+      <section className="bg-accent py-20 text-center text-white">
+        <h2 className="text-3xl font-bold">Ready to Get Started?</h2>
+        <p className="mt-4">
+          Take our free assessment to find out your eligibility for an
+          EuConnekt.
+        </p>
+        <Link
+          href="/free-assessment"
+          className="mt-6 inline-block rounded-md bg-white px-6 py-3 text-sm font-semibold text-accent"
+        >
+          Start Your Free Assessment
+        </Link>
+      </section>
+    </>
   );
 }
