@@ -70,6 +70,18 @@ export default function Header() {
 
               <div className="absolute left-0 mt-2 w-56 rounded-lg border bg-white shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
                 <Link
+                  href="/services/citizenship"
+                  className="block px-4 py-2 text-sm hover:bg-gray-100"
+                >
+                  Citizenship
+                </Link>
+                <Link
+                  href="/services/residency-visa"
+                  className="block px-4 py-2 text-sm hover:bg-gray-100"
+                >
+                  Residence Visa
+                </Link>
+                <Link
                   href="/services/employers"
                   className="block px-4 py-2 text-sm hover:bg-gray-100"
                 >

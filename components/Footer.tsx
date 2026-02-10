@@ -17,7 +17,7 @@ export default function Footer() {
             <ul className="space-y-2 text-sm text-gray-300">
               <li><Link href="/how-we-work">How We Work</Link></li>
               <li><Link href="/work-permit-types">Permit Types</Link></li>
-              <li><Link href="/services">Services</Link></li>
+              <li><Link href="/top-industries">Top Industries</Link></li>
             </ul>
           </div>
 
