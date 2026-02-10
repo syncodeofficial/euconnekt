@@ -7,9 +7,11 @@ export default function EmployersPage() {
     <main>
       {/* HERO */}
       <Hero
-        title="Services for Employers"
-        subtitle="Support for Irish companies hiring international talent, including guidance on eligibility and permit processing."
-        variant="video"
+          title="Services for Employers"
+          subtitle="Support for Irish companies hiring international talent, including guidance on eligibility and permit processing."
+          variant="image"
+          image="/images/services/employers.webp"
+          overlay
       />
 
       {/* CONTENT */}
