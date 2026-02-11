@@ -31,7 +31,7 @@ export default function Hero({
   features,
 }: HeroProps) {
   return (
-    <section className="relative h-[70vh] w-full overflow-hidden">
+    <section className="relative h-[35vh] md:h-[45vh] lg:h-[50vh]">
       {/* BACKGROUND */}
       {variant === "video" && video && (
         <video
@@ -42,6 +42,7 @@ export default function Hero({
           className="absolute inset-0 h-full w-full object-cover"
         >
           <source src={video} type="video/mp4" />
+          <source src={video} type="video/webm" />
         </video>
       )}
 
