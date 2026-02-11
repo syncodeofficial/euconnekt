@@ -148,7 +148,7 @@ export default function HowWeWorkPage() {
 
           <div className="grid gap-10 md:grid-cols-2 items-center">
             <img
-              src="/images/founders.png"
+              src="/images/founders.webp"
               alt="Founders of EuConnekt"
               className="rounded-xl object-cover"
             />
