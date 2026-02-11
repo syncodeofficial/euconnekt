@@ -7,7 +7,7 @@ export const metadata = {
   title: "Euconnekt Services",
   description: "Descrição do site",
   icons: {
-    icon: "/icon.png",
+    icon: "./icon.png",
   },
 };
 
