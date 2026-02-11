@@ -5,13 +5,9 @@ import "./globals.css";
 
 export const metadata = {
   title: "Euconnekt Services",
-  description: "Descrição do site",
-  icons: {
-    icon: "./icon.png",
-  },
-};
-
-
+  description: "Your Path to Euconnekt",
+  }
+  
 export default function RootLayout({
   children,
 }: {
